@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#570b20">
+
+<title>प्रियंका ❤️ नन्दकिशोर | शुभ विवाह</title>
+
+<meta name="description"
+content="प्रियंका और नन्दकिशोर के शुभ विवाह का स्नेहपूर्ण निमंत्रण।">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&family=Yatra+One&display=swap');
+
+:root {
+  --red: #690d27;
+  --dark: #390817;
+  --gold: #e7c77c;
+  --cream: #fff8e9;
+  --pink: #f5d7d5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Tiro Devanagari Hindi', serif;
+  background: var(--cream);
+  color: var(--dark);
+  overflow-x: hidden;
+}
+
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  font-family: inherit;
+}
+
+.hero {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+  background:
+    radial-gradient(circle at 50% 40%,
+    #a62c4b 0%, #690d27 48%, #280511 100%);
+  color: var(--gold);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before,
+.hero::after {
+  content: "✦";
+  position: absolute;
+  font-size: 170px;
+  color: #e7c77c10;
+}
+
+.hero::before {
+  top: 10%;
+  left: -35px;
+}
+
+.hero::after {
+  bottom: 5%;
+  right: -35px;
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 440px;
+  position: relative;
+  z-index: 2;
+}
+
+.om {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.small-title {
+  letter-spacing: 2px;
+  font-size: 13px;
+  margin-bottom: 22px;
+}
+
+.hero h1 {
+  font-family: 'Yatra One', serif;
+  font-size: clamp(32px, 8vw, 52px);
+  line-height: 1.5;
+  color: #fff1bd;
+}
+
+.hero p {
+  margin-top: 15px;
+  line-height: 2;
+}
+
+.envelope {
+  width: 210px;
+  height: 140px;
+  margin: 35px auto 20px;
+  position: relative;
+  cursor: pointer;
+  perspective: 900px;
+}
+
+.envelope-back {
+  position: absolute;
+  inset: 0;
+  background: #a82b4d;
+  border: 2px solid var(--gold);
+  border-radius: 5px;
+}
+
+.envelope-front {
+  position: absolute;
+  inset: 0;
+  background: #8b1b3c;
+  clip-path: polygon(0 0, 50% 60%, 100% 0, 100% 100%, 0 100%);
+  border-bottom: 2px solid var(--gold);
+}
+
+.envelope-flap {
+  position: absolute;
+  inset: 0;
+  background: #c84b65;
+  clip-path: polygon(0 0, 100% 0, 50% 65%);
+  transform-origin: top;
+  transition: transform 1s ease;
+  z-index: 3;
+}
+
+.envelope-seal {
+  position: absolute;
+  top: 48px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--gold);
+  color: var(--red);
+  font-size: 25px;
+  z-index: 4;
+}
+
+.envelope.open .envelope-flap {
+  transform: rotateX(180deg);
+}
+
+.envelope.open .envelope-seal {
+  opacity: 0;
+}
+
+.open-btn {
+  background: var(--gold);
+  color: var(--dark);
+  border: 0;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 5px 25px #0003;
+}
+
+.open-btn:active {
+  transform: scale(.97);
+}
+
+.hint {
+  margin-top: 14px;
+  font-size: 12px;
+  color: #f7e6c2;
+}
+
+section {
+  padding: 65px 20px;
+}
+
+.section-inner {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+
+.section-label {
+  color: #9b5b38;
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+h2 {
+  font-family: 'Yatra One', serif;
+  color: var(--red);
+  font-size: clamp(27px, 6vw, 38px);
+  margin-bottom: 22px;
+}
+
+.intro {
+  background: var(--cream);
+}
+
+.invitation-card {
+  border: 1px solid #d7b76e;
+  outline: 4px double #d7b76e;
+  outline-offset: 6px;
+  padding: 32px 18px;
+  margin: 15px 8px;
+  background:
+    radial-gradient(circle at top, #f9e7c5, transparent 65%);
+  position: relative;
+}
+
+.invitation-card::before {
+  content: "❁";
+  font-size: 30px;
+  color: #a62c4b;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.couple {
+  font-family: 'Yatra One', serif;
+  font-size: clamp(30px, 7vw, 45px);
+  color: var(--red);
+  line-height: 1.6;
+}
+
+.heart {
+  color: #b51d43;
+  font-size: 25px;
+  margin: 5px;
+}
+
+.invitation-text {
+  font-size: 15px;
+  line-height: 2.1;
+  margin-top: 20px;
+}
+
+.divider {
+  color: #b18a45;
+  margin: 22px 0;
+  letter-spacing: 6px;
+}
+
+.countdown-section {
+  background: var(--dark);
+  color: var(--gold);
+}
+
+.countdown-section h2 {
+  color: #f6df9f;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 28px 0;
+}
+
+.time-box {
+  min-width: 65px;
+  padding: 15px 8px;
+  border: 1px solid #b18a45;
+  border-radius: 10px;
+  background: #ffffff08;
+}
+
+.time-box strong {
+  display: block;
+  font-size: 27px;
+}
+
+.time-box span {
+  font-size: 12px;
+}
+
+.events {
+  background: #f7e9d4;
+}
+
+.event-list {
+  display: grid;
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.event {
+  background: #fffaf1;
+  border: 1px solid #e4cda2;
+  border-radius: 16px;
+  padding: 24px 18px;
+  box-shadow: 0 8px 25px #5a241008;
+}
+
+.event-icon {
+  font-size: 35px;
+  margin-bottom: 12px;
+}
+
+.event h3 {
+  font-family: 'Yatra One', serif;
+  font-size: 24px;
+  color: var(--red);
+  margin-bottom: 10px;
+}
+
+.event p {
+  line-height: 2;
+  font-size: 15px;
+}
+
+.event-date {
+  color: #9b5b38;
+  font-weight: bold;
+}
+
+.location {
+  background: var(--cream);
+}
+
+.location-card {
+  padding: 28px 18px;
+  border-radius: 18px;
+  background: #fff;
+  border: 1px solid #e4cda2;
+  line-height: 2;
+}
+
+.map-btn, .share-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: var(--red);
+  color: white;
+  text-decoration: none;
+  border: 0;
+  padding: 13px 22px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.family {
+  background: #f7e9d4;
+}
+
+.family-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.family-box {
+  padding: 20px 10px;
+  background: #fffaf1;
+  border: 1px solid #e4cda2;
+  border-radius: 12px;
+  line-height: 1.9;
+  font-size: 13px;
+}
+
+.family-box strong {
+  display: block;
+  color: var(--red);
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.footer {
+  text-align: center;
+  padding: 45px 20px;
+  background: var(--dark);
+  color: #f6df9f;
+  line-height: 2;
+}
+
+.footer h2 {
+  color: #f6df9f;
+  font-size: 27px;
+}
+
+.fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity .8s ease, transform .8s ease;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 650px) {
+  .event-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .event {
+    padding: 28px 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  .countdown {
+    gap: 5px;
+  }
+
+  .time-box {
+    min-width: 55px;
+    padding: 12px 5px;
+  }
+
+  .time-box strong {
+    font-size: 22px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- शुरुआती लिफाफा -->
+<header class="hero" id="home">
+  <div class="hero-content">
+    <div class="om">ॐ</div>
+    <div class="small-title">श्री गणेशाय नमः</div>
+
+    <h1>शुभ विवाह</h1>
+    <p>प्रियंका एवं नन्दकिशोर<br>के मंगल परिणय का स्नेहपूर्ण निमंत्रण</p>
+
+    <div class="envelope" id="envelope" role="button"
+         tabindex="0" aria-label="निमंत्रण खोलें">
+      <div class="envelope-back"></div>
+      <div class="envelope-front"></div>
+      <div class="envelope-flap"></div>
+      <div class="envelope-seal">ॐ</div>
+    </div>
+
+    <button class="open-btn" id="openBtn">
+      निमंत्रण खोलें ✨
+    </button>
+
+    <p class="hint">लिफाफे पर टैप करें</p>
+  </div>
+</header>
+
+<main id="mainContent" class="hidden">
+
+<!-- मुख्य निमंत्रण -->
+<section class="intro">
+  <div class="section-inner fade">
+    <div class="section-label">सप्रेम आमंत्रण</div>
+    <h2>शुभ विवाह</h2>
+
+    <div class="invitation-card">
+      <div class="couple">प्रियंका</div>
+      <div class="heart">♥</div>
+      <div class="couple">नन्दकिशोर</div>
+
+      <div class="divider">❦ ❦ ❦</div>
+
+      <p class="invitation-text">
+        परमपिता परमेश्वर की असीम कृपा से<br>
+        हमारे परिवार में शुभ विवाह का मंगल अवसर आया है।<br><br>
+        इस पावन अवसर पर आप सपरिवार पधारकर<br>
+        वर-वधू को अपना स्नेह एवं आशीर्वाद प्रदान करें।
+      </p>
+
+      <div class="divider">❦ ❦ ❦</div>
+
+      <p class="invitation-text">
+        <strong>शुभ विवाह</strong><br>
+        सोमवार, 30 नवंबर 2026
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- काउंटडाउन -->
+<section class="countdown-section">
+  <div class="section-inner fade">
+    <div class="section-label">मंगल परिणय</div>
+    <h2>शुभ विवाह में शेष समय</h2>
+
+    <div class="countdown">
+      <div class="time-box">
+        <strong id="days">00</strong>
+        <span>दिन</span>
+      </div>
+      <div class="time-box">
+        <strong id="hours">00</strong>
+        <span>घंटे</span>
+      </div>
+      <div class="time-box">
+        <strong id="minutes">00</strong>
+        <span>मिनट</span>
+      </div>
+      <div class="time-box">
+        <strong id="seconds">00</strong>
+        <span>सेकंड</span>
+      </div>
+    </div>
+
+    <p id="countdownMessage">आपकी उपस्थिति हमारे लिए सौभाग्य होगी।</p>
+  </div>
+</section>
+
+<!-- कार्यक्रम -->
+<section class="events">
+  <div class="section-inner fade">
+    <div class="section-label">मंगलमय आयोजन</div>
+    <h2>विवाह के कार्यक्रम</h2>
+
+    <div class="event-list">
+
+      <article class="event">
+        <div class="event-icon">🌼</div>
+        <h3>शुभ हल्दी</h3>
+        <p class="event-date">रविवार, 29 नवंबर 2026</p>
+        <p>शुभ मंगल अवसर<br>समस्त परिवार की ओर से सादर आमंत्रण</p>
+      </article>
+
+      <article class="event">
+        <div class="event-icon">💍</div>
+        <h3>शुभ विवाह</h3>
+        <p class="event-date">सोमवार, 30 नवंबर 2026</p>
+        <p>प्रियंका एवं नन्दकिशोर<br>के मंगल परिणय का शुभ अवसर</p>
+      </article>
+
+      <article class="event">
+        <div class="event-icon">🌹</div>
+        <h3>कन्या विदाई</h3>
+        <p class="event-date">मंगलवार, 1 दिसंबर 2026</p>
+        <p>नवजीवन की मंगलकामनाओं<br>के साथ भावपूर्ण विदाई</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- विवाह स्थल -->
+<section class="location">
+  <div class="section-inner fade">
+    <div class="section-label">आपका स्वागत है</div>
+    <h2>विवाह स्थल</h2>
+
+    <div class="location-card">
+      <div class="event-icon">📍</div>
+      <h3>अम्बिका मैरिज हॉल</h3>
+      <p>
+        सिसवा बाजार,<br>
+        जिला महाराजगंज, उत्तर प्रदेश
+      </p>
+
+      <a class="map-btn"
+         href="https://www.google.com/maps/search/?api=1&query=Ambika+Marriage+Hall+Siswa+Bazar+Maharajganj+Uttar+Pradesh"
+         target="_blank" rel="noopener">
+        Google Maps पर रास्ता देखें
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- परिवार -->
+<section class="family">
+  <div class="section-inner fade">
+    <div class="section-label">स्नेह एवं आशीर्वाद</div>
+    <h2>दोनों परिवारों की ओर से</h2>
+
+    <div class="family-grid">
+      <div class="family-box">
+        <strong>वधू पक्ष</strong>
+        आयु. प्रियंका जायसवाल<br>
+        सुपुत्री श्रीमती अंजली देवी<br>
+        एवं श्री गणेश जायसवाल<br><br>
+        ग्राम व पोस्ट मिश्रौलिया<br>
+        जिला महाराजगंज
+      </div>
+
+      <div class="family-box">
+        <strong>वर पक्ष</strong>
+        चि. नन्दकिशोर जायसवाल (मुन्ना)<br>
+        सुपुत्र स्व. तारा देवी<br>
+        एवं श्री लक्ष्मीचंद जायसवाल<br><br>
+        अम्बेडकर नगर, वार्ड नं. 4<br>
+        कसया, जिला कुशीनगर
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- अंतिम संदेश -->
+<footer class="footer">
+  <div class="fade">
+    <div class="om">ॐ</div>
+    <h2>सादर निमंत्रण</h2>
+    <p>
+      आपका आगमन हमारे लिए<br>
+      अत्यंत हर्ष एवं सौभाग्य का विषय होगा।
+    </p>
+
+    <button class="share-btn" id="shareBtn">
+      💌 निमंत्रण परिवार के साथ शेयर करें
+    </button>
+
+    <p style="font-size:12px; margin-top:25px">
+      स्नेह एवं आशीर्वाद की आकांक्षा में<br>
+      जायसवाल परिवार
+    </p>
+  </div>
+</footer>
+
+</main>
+
+<script>
+const envelope = document.getElementById("envelope");
+const openBtn = document.getElementById("openBtn");
+const mainContent = document.getElementById("mainContent");
+
+function openInvitation() {
+  if (!mainContent.classList.contains("hidden")) return;
+
+  envelope.classList.add("open");
+  openBtn.textContent = "निमंत्रण खुल गया ♥";
+
+  setTimeout(() => {
+    mainContent.classList.remove("hidden");
+    mainContent.querySelectorAll(".fade").forEach(el => {
+      observer.observe(el);
+    });
+
+    mainContent.scrollIntoView({
+      behavior: "smooth"
+    });
+  }, 850);
+}
+
+openBtn.addEventListener("click", openInvitation);
+envelope.addEventListener("click", openInvitation);
+
+envelope.addEventListener("keydown", event => {
+  if (event.key === "Enter" || event.key === " ") {
+    event.preventDefault();
+    openInvitation();
+  }
+});
+
+// पन्ने खुलने पर हल्का एनिमेशन
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+}, { threshold: 0.15 });
+
+// शादी का काउंटडाउन
+const weddingDate = new Date("2026-11-30T00:00:00+05:30").getTime();
+
+function updateCountdown() {
+  const now = Date.now();
+  const difference = weddingDate - now;
+
+  if (difference <= 0) {
+    document.getElementById("days").textContent = "00";
+    document.getElementById("hours").textContent = "00";
+    document.getElementById("minutes").textContent = "00";
+    document.getElementById("seconds").textContent = "00";
+
+    document.getElementById("countdownMessage").textContent =
+      "प्रियंका एवं नन्दकिशोर को शुभ विवाह की हार्दिक बधाई!";
+
+    return;
+  }
+
+  const days = Math.floor(difference / 86400000);
+  const hours = Math.floor((difference % 86400000) / 3600000);
+  const minutes = Math.floor((difference % 3600000) / 60000);
+  const seconds = Math.floor((difference % 60000) / 1000);
+
+  document.getElementById("days").textContent = days;
+  document.getElementById("hours").textContent = String(hours).padStart(2, "0");
+  document.getElementById("minutes").textContent = String(minutes).padStart(2, "0");
+  document.getElementById("seconds").textContent = String(seconds).padStart(2, "0");
+}
+
+updateCountdown();
+setInterval(updateCountdown, 1000);
+
+// WhatsApp पर शेयर
+document.getElementById("shareBtn").addEventListener("click", async () => {
+  const invitationText =
+    "💌 शुभ विवाह का स्नेहपूर्ण निमंत्रण\n\n" +
+    "प्रियंका एवं नन्दकिशोर जायसवाल\n" +
+    "शुभ विवाह: 30 नवंबर 2026\n" +
+    "स्थान: अम्बिका मैरिज हॉल, सिसवा बाजार, महाराजगंज\n\n" +
+    "सपरिवार पधारकर वर-वधू को अपना आशीर्वाद प्रदान करें।\n\n" +
+    window.location.href;
+
+  if (navigator.share) {
+    try {
+      await navigator.share({
+        title: "प्रियंका एवं नन्दकिशोर का शुभ विवाह",
+        text: invitationText,
+        url: window.location.href
+      });
+    } catch (error) {
+      // शेयर विंडो बंद करने पर कोई कार्रवाई नहीं
+    }
+  } else {
+    window.open(
+      "https://wa.me/?text=" + encodeURIComponent(invitationText),
+      "_blank"
+    );
+  }
+});
+</script>
+
+</body>
+</html>
